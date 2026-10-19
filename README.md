@@ -25,4 +25,3 @@ Vercel tự nhận diện ứng dụng NestJS từ `src/main.ts`. Import reposit
 ## Lưu ý
 
 Form tư vấn hiện chỉ kiểm tra dữ liệu trong trình duyệt, chưa gửi hay lưu thông tin. Cần nối API và nơi lưu trữ trước khi dùng để tiếp nhận yêu cầu thật. Hình ảnh đang lấy từ Unsplash để minh họa.
-
