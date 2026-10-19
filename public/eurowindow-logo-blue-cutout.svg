@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="218" height="62" viewBox="0 0 218 62" role="img" aria-label="Eurowindow">
+  <defs>
+    <clipPath id="symbol-area"><rect x="0" y="0" width="50" height="62"/></clipPath>
+    <clipPath id="word-area"><rect x="50" y="0" width="168" height="62"/></clipPath>
+    <filter id="clear-white-symbol" x="0" y="0" width="50" height="62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feColorMatrix in="SourceGraphic" type="matrix" result="luma" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        .333 .333 .333 0 0"/>
+      <feComponentTransfer in="luma" result="keep-blue">
+        <feFuncA type="discrete" tableValues="1 1 1 0"/>
+      </feComponentTransfer>
+      <feComposite in="keep-blue" in2="SourceAlpha" operator="in"/>
+    </filter>
+  </defs>
+  <image href="/eurowindow-logo-blue.png" x="0" y="0" width="218" height="62" preserveAspectRatio="none" clip-path="url(#word-area)"/>
+  <image href="/eurowindow-logo-blue.png" x="0" y="0" width="218" height="62" preserveAspectRatio="none" clip-path="url(#symbol-area)" filter="url(#clear-white-symbol)"/>
+</svg>
